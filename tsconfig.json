@@ -28,10 +28,10 @@
     */
     "allowImportingTsExtensions": true,
     "paths": {
-      "my-app/tests/*": [
+      "emberWarpDriveTest/tests/*": [
         "./tests/*"
       ],
-      "my-app/*": [
+      "emberWarpDriveTest/*": [
         "./app/*"
       ],
       "*": [
