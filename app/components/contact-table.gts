@@ -10,16 +10,16 @@ export default class ContactList extends Component {
 
   constructor() {
     super(...arguments);
-    void this.contactTask.perform();
+    this.contactTask.perform();
   }
 
   contactTask = task({ restartable: true }, async () => {
     await timeout(600);
-    try {
-      this.contact = await this.store.findall('contact');
-    } catch {
-      console.log('cannot find Contact');
-    }
+    // try {
+      this.contact = await this.store.findall('contacts');
+    // } catch {
+    // console.log('ERROR: Cannot find contact');
+    // }
   });
 
   <template>
