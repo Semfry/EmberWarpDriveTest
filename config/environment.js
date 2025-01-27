@@ -7,7 +7,7 @@ module.exports = function (environment) {
     rootURL: '/',
     locationType: 'history',
     EmberENV: {
-      EXTEND_PROTOTYPES: false,
+      EXTEND_PROTOTYPES: true,
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
@@ -21,6 +21,7 @@ module.exports = function (environment) {
   };
 
   if (environment === 'development') {
+    ENV.APP.API_URL = 'http://localhost:8000';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
