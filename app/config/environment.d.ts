@@ -1,6 +1,6 @@
 /**
  * Type declarations for
- *    import config from 'emberWarpDriveTest/config/environment'
+ *    import config from 'emberwarpdrivetest/config/environment'
  */
 declare const config: {
   environment: string;

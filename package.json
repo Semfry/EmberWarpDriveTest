@@ -1,8 +1,8 @@
 {
-  "name": "emberWarpDriveTest",
+  "name": "emberwarpdrivetest",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for emberWarpDriveTest goes here",
+  "description": "Small description for emberwarpdrivetest goes here",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -24,6 +24,9 @@
     "start": "vite",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
     "test:ember": "vite build --mode test && ember test --path dist"
+  },
+  "dependencies": {
+    "ember-concurrency": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",

@@ -1,5 +1,5 @@
-import Application from 'emberWarpDriveTest/app';
-import config from 'emberWarpDriveTest/config/environment';
+import Application from 'emberwarpdrivetest/app';
+import config from 'emberwarpdrivetest/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

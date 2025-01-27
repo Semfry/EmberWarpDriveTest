@@ -1,13 +1,15 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
+import { service } from '@ember/service';
 
-export default class dataDisplay extends Component {
+export default class DataDisplay extends Component {
+  @service store;
+
   @tracked nametext = 'List Page';
 
   <template>
     <div class="text-lg">
-      click this to go to
-      {{this.nametext}}
+      data
     </div>
   </template>
 }

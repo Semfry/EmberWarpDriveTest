@@ -1,24 +1,24 @@
 import { module, test } from 'qunit';
-import { setupRenderingTest } from 'emberwarpdrivetest/tests/helpers';
+import { setupRenderingTest } from 'ember-warp-drive-test/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | data-display', function (hooks) {
+module('Integration | Component | contact-list', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<DataDisplay />`);
+    await render(hbs`<ContactList />`);
 
     assert.dom().hasText('');
 
     // Template block usage:
     await render(hbs`
-      <DataDisplay>
+      <ContactList>
         template block text
-      </DataDisplay>
+      </ContactList>
     `);
 
     assert.dom().hasText('template block text');

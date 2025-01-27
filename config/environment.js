@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'emberWarpDriveTest',
+    modulePrefix: 'emberwarpdrivetest',
     environment,
     rootURL: '/',
     locationType: 'history',
