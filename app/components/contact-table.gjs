@@ -1,10 +1,10 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import { service } from '@ember/service';
+// import { service } from '@ember/service';
 import { task, timeout } from 'ember-concurrency';
 
 export default class ContactList extends Component {
-  @service store;
+  // @service store;
 
   @tracked contact;
 
