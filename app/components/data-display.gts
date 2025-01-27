@@ -1,7 +1,13 @@
-<template>
-  <div class="dataDisplay">
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+
+export default class dataDisplay extends Component {
+  @tracked nametext = 'List Page';
+
+  <template>
     <div class="text-lg">
-      {{@text}}
+      click this to go to
+      {{this.nametext}}
     </div>
-  </div>
-</template>
+  </template>
+}

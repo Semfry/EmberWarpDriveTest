@@ -48,6 +48,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+### Tailwind Note
+
+Tailwind works with the notes here: https://tailwindcss.com/docs/installation/using-vite but you need to move app.css up to the project directory from "styles" and import it into app.js, from here: https://tailwindcss.com/docs/installation/framework-guides/emberjs
+
 ## Further Reading / Useful Links
 
 - [ember.js](https://emberjs.com/)

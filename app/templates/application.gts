@@ -3,9 +3,9 @@ import { pageTitle } from 'ember-page-title';
 
 export default Route(
   <template>
-    {{pageTitle "emberWarpDriveTest"}}
+    {{pageTitle "ember Warpdrive Test"}}
 
-    <div class="text-2xl">Ember Warp Drive Test</div>
+    <div class="text-2xl">Ember Warpdrive Test</div>
 
     {{outlet}}
   </template>
