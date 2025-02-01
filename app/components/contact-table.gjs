@@ -16,7 +16,7 @@ export default class ContactList extends Component {
   contactTask = task({ restartable: true }, async () => {
     await timeout(600);
     // try {
-    this.contact = await this.store.findall('contacts');
+    // this.contact = await this.store.findall('contacts');
     // } catch {
     // console.log('ERROR: Cannot find contact');
     // }
