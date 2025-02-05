@@ -1,9 +1,10 @@
 import HomeText from '../components/home-text';
+import Route from 'ember-route-template';
+
 import { pageTitle } from 'ember-page-title';
-import Component from '@glimmer/component';
 import { LinkTo } from '@ember/routing';
 
-export default class ApplicationTemplate extends Component {
+export default Route(
   <template>
     {{pageTitle "Main Page"}}
 
@@ -11,4 +12,5 @@ export default class ApplicationTemplate extends Component {
       <HomeText />
     </LinkTo>
   </template>
-}
+)
+

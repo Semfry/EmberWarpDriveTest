@@ -1,8 +1,10 @@
 import ContactTable from '../components/contact-table';
-import { pageTitle } from 'ember-page-title';
-import Component from '@glimmer/component';
+import Route from 'ember-route-template';
 
-export default class ApplicationTemplate extends Component {
+import { pageTitle } from 'ember-page-title';
+
+
+export default Route(
   <template>
     {{pageTitle "Contact List"}}
 
@@ -10,4 +12,4 @@ export default class ApplicationTemplate extends Component {
 
     <ContactTable />
   </template>
-}
+)
