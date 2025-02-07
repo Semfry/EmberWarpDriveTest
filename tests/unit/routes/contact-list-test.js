@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'ember-warp-drive-test/tests/helpers';
+import { setupTest } from 'emberwarpdrivetest/tests/helpers';
 
 module('Unit | Route | contact-list', function (hooks) {
   setupTest(hooks);

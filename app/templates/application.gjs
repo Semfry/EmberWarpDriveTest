@@ -4,7 +4,7 @@ import { pageTitle } from 'ember-page-title';
 
 export default Route(
   <template>
-    {{pageTitle "ember Warpdrive Test"}}
+    {{pageTitle "Ember Warpdrive Test"}}
 
     <div class="text-2xl">Ember Warpdrive Test</div>
 

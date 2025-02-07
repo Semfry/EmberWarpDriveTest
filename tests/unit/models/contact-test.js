@@ -1,4 +1,4 @@
-import { setupTest } from 'ember-warp-drive-test/tests/helpers';
+import { setupTest } from 'emberwarpdrivetest/tests/helpers';
 import { module, test } from 'qunit';
 
 module('Unit | Model | contact', function (hooks) {
