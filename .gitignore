@@ -15,6 +15,7 @@
 /yarn-error.log
 /tmp
 /.venv
+pnpm-lock.yaml
 
 # ember-try
 /.node_modules.ember-try/

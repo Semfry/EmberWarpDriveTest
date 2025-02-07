@@ -1,35 +1,26 @@
 import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
-// import { service } from '@ember/service';
-import { task, timeout } from 'ember-concurrency';
+import { Request } from '@warp-drive/ember';
 
 export default class ContactList extends Component {
-  // @service store;
-
-  @tracked contact;
-
-  constructor() {
-    super(...arguments);
-    this.contactTask.perform();
-  }
-
-  contactTask = task({ restartable: true }, async () => {
-    await timeout(600);
-    // try {
-    // this.contact = await this.store.findall('contacts');
-    // } catch {
-    // console.log('ERROR: Cannot find contact');
-    // }
-  });
-
   <template>
     test
-    {{#if this.contactTask.isRunning}}please wait...{{else}}
-      {{#each this.contact as |contact|}}
-        {{contact.firstName}}
-        {{contact.lastName}}
-        {{contact.town}}
-      {{/each}}
-    {{/if}}
+    <Request @request={{@model.contact}}>
+      <:loading as |state|>
+        Please wait, Progress
+        {{state.completedRatio}}
+      </:loading>
+
+      <:error as |error|>
+        {{error}}
+      </:error>
+
+      <:content as |contact|>
+        {{#each contact.data as |contact|}}
+          {{contact.firstName}}
+          {{contact.lastName}}
+          {{contact.notes}}
+        {{/each}}
+      </:content>
+    </Request>
   </template>
 }
