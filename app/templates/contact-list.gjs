@@ -9,6 +9,6 @@ export default Route(
 
     <div class="text-lg">List Page</div>
 
-    <ContactTable />
+    <ContactTable @model={{@model.contact}} />
   </template>
 );
