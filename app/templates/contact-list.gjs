@@ -3,7 +3,6 @@ import Route from 'ember-route-template';
 
 import { pageTitle } from 'ember-page-title';
 
-
 export default Route(
   <template>
     {{pageTitle "Contact List"}}
@@ -12,4 +11,4 @@ export default Route(
 
     <ContactTable />
   </template>
-)
+);
