@@ -12,5 +12,4 @@ export default Route(
       <HomeText />
     </LinkTo>
   </template>
-)
-
+);
