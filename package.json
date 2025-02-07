@@ -118,6 +118,7 @@
     "./*": "./app/*"
   },
   "dependencies": {
+    "@warp-drive/build-config": "^0.0.0",
     "@warp-drive/core-types": "^0.0.0",
     "@warp-drive/ember": "^0.0.0"
   }
