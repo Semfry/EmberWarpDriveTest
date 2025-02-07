@@ -15,7 +15,6 @@
 /yarn-error.log
 /tmp
 /.venv
-/pnpm-lock.yaml
 
 # ember-try
 /.node_modules.ember-try/
@@ -26,3 +25,4 @@
 
 # broccoli-debug
 /DEBUG/
+pnpm-lock.yaml
