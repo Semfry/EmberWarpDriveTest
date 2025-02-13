@@ -3,7 +3,6 @@ export const modelHandler = {
     const { request } = context;
     const updatedRequest = Object.assign({}, request, {
       url: 'http://localhost:8000/api/0.1/contacts',
-      // url: request.url + '.json',
     });
 
     return next(updatedRequest);

@@ -1,28 +1,20 @@
 import Component from '@glimmer/component';
-import { Request } from '@warp-drive/ember';
+import { service } from '@ember/service';
 
 export default class ContactList extends Component {
+  @service router;
+  @service store;
+
+  constructor() {
+    super(...arguments);
+
+    console.log(this.args.contact);
+  }
+
   <template>
-    test
-    <Request @request={{@model}}>
-      <:loading as |state|>
-        Please wait, Progress
-        {{state.completedRatio}}
-      </:loading>
-
-      <:error as |error|>
-        {{error}}
-      </:error>
-
-      <:content as |contactContent|>
-        {{#each contactContent.data as |contact|}}
-          {{contact.firstName}}
-          {{contact.lastName}}
-          {{contact.notes}}
-        {{/each}}
-      </:content>
-    </Request>
-
-    {{outlet}}
+    {{@contact.attributes.firstName}}
+    {{@contact.attributes.lastName}}
+    {{@contact.attributes.notes}}
+    {{@contact.attributes.title}}
   </template>
 }
