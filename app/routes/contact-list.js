@@ -1,7 +1,7 @@
+import { buildBaseURL } from '@ember-data/request-utils';
 import Route from '@ember/routing/route';
 import { service } from '@ember/service';
 import { query } from '@ember-data/json-api/request';
-import ContactModel from 'emberwarpdrivetest/models/contact';
 
 export default class ContactListRoute extends Route {
   @service router;
@@ -9,7 +9,7 @@ export default class ContactListRoute extends Route {
 
   model() {
     return {
-      contactRequest: this.store.request(query<ContactModel>('contact')),
+      contactRequest: this.store.request(query('contact')),
     };
   }
 }
