@@ -12,9 +12,9 @@ export default class ContactList extends Component {
   }
 
   <template>
-    {{@contact.firstName}}
-    {{@contact.lastName}}
-    {{@contact.notes}}
-    {{@contact.title}}
+    {{@contact.attributes.firstName}}
+    {{@contact.attributes.lastName}}
+    {{@contact.attributes.notes}}
+    {{@contact.attributes.title}}
   </template>
 }
