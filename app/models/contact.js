@@ -1,8 +1,8 @@
 import Model, { attr } from '@ember-data/model';
 
 export default class ContactModel extends Model {
-  @attr('string') 'first-name';
-  @attr('string') 'last-name';
+  @attr('string') firstName;
+  @attr('string') lastName;
   @attr('string') notes;
   @attr('string') title;
 }
