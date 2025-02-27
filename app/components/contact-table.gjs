@@ -12,8 +12,8 @@ export default class ContactList extends Component {
   }
 
   <template>
-    {{@contact.attributes.firstName}}
-    {{@contact.attributes.lastName}}
+    {{@contact.attributes.first-name}}
+    {{@contact.attributes.last-name}}
     {{@contact.attributes.notes}}
     {{@contact.attributes.title}}
   </template>
