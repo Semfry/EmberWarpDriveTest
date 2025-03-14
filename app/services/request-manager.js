@@ -11,6 +11,17 @@ import Fetch from '@ember-data/request/fetch';
 //   },
 // };
 
+// const JsonApiHandler = {
+//   request(context, next) {
+//     const { request } = context;
+//     const updatedRequest = Object.assign({}, request, {
+//       url: request.url + '?format=vnd.api%2Bjson',
+//     });
+
+//     return next(updatedRequest);
+//   },
+// };
+
 export default class Requests extends RequestManager {
   constructor(args) {
     super(args);

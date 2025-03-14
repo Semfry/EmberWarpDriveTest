@@ -1,4 +1,6 @@
 import ContactTable from '../components/contact-table';
+import LoadingBar from '../components/loading-bar';
+
 import Route from 'ember-route-template';
 
 import { pageTitle } from 'ember-page-title';
@@ -13,9 +15,8 @@ export default Route(
     test
     <Request @request={{@model.contactRequest}}>
 
-      <:loading as |state|>
-        Please wait, Progress
-        {{state.completedRatio}}
+      <:loading>
+        <LoadingBar />
       </:loading>
 
       <:content as |ContactContent|>

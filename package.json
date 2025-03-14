@@ -38,6 +38,7 @@
     "@ember-data/model": "5.4.0-beta.14",
     "@ember-data/request": "5.4.0-beta.14",
     "@ember-data/request-utils": "5.4.0-beta.14",
+    "@ember-data/rest": "5.4.0-beta.14",
     "@ember-data/serializer": "5.4.0-beta.14",
     "@ember-data/store": "5.4.0-beta.14",
     "@ember-data/tracking": "5.4.0-beta.14",
@@ -67,6 +68,7 @@
     "@warp-drive/build-config": "^0.0.1",
     "@warp-drive/core-types": "^0.0.1",
     "@warp-drive/ember": "^0.0.1",
+    "@warp-drive/schema-record": "^0.0.1",
     "babel-plugin-ember-template-compilation": "^2.3.0",
     "concurrently": "^9.1.2",
     "decorator-transforms": "^2.3.0",
@@ -119,5 +121,8 @@
   "exports": {
     "./tests/*": "./tests/*",
     "./*": "./app/*"
+  },
+  "dependencies": {
+    "@warp-drive/schema-record": "^0.0.1"
   }
 }

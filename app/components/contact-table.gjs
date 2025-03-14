@@ -7,14 +7,13 @@ export default class ContactList extends Component {
 
   constructor() {
     super(...arguments);
-
     console.log(this.args.contact);
   }
 
   <template>
-    {{@contact.attributes.first-name}}
-    {{@contact.attributes.last-name}}
-    {{@contact.attributes.notes}}
-    {{@contact.attributes.title}}
+    {{@contact.title}}
+    {{@contact.first-name}}
+    {{@contact.last-name}}
+    {{@contact.notes}}
   </template>
 }
